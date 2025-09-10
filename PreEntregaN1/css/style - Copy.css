@@ -1,0 +1,194 @@
+/* --- FUENTES Y ESTILOS GENERALES --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    /* Flexbox para el layout vertical y sticky footer en MÓVIL */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    flex: 1; /* Empuja el footer hacia abajo */
+    width: 100%;
+    max-width: 1200px; /* Centra el contenido principal */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0; /* Espacio vertical entre secciones */
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #001a41;
+}
+
+/* --- HEADER Y NAVEGACIÓN --- */
+header {
+    background-color: #bdd7a4;
+    padding: 15px 40px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 80px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav a {
+    color: #001a41;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*--- SECCIÓN HERO (INDEX.HTML) ---*/
+.hero {
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/Cover.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 { color: white; }
+
+/* --- NOSOTROS --- */
+.nosotros {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nosotros img {
+    height: 600px;
+    flex: 1; /* Ocupa 50% */
+    border-radius: 9px;
+}
+.nosotros div {
+    flex: 1; /* Ocupa 50% */
+    text-align: left;
+}
+.nosotros div h2 {
+    text-align: left;
+}
+
+/* --- CLIENTES --- */
+.clientes {
+    text-align: center;
+}
+.clientes article {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+.clientes article img {
+    flex-basis: 40%; /* La imagen ocupa 40% del espacio */
+}
+.clientes article div {
+    flex-basis: 60%; /* El texto ocupa 60% del espacio */
+}
+
+/* --- SERVICIOS --- */
+.headservicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cuadrícula de 2 columnas */
+    gap: 30px;
+}
+.tituloservicios {
+    grid-column: 1 / -1; /* El título ocupa todo el ancho */
+    text-align: center;
+}
+.headservicios article {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.headservicios article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.headservicios article div {
+    padding: 20px;
+}
+
+.finalservicios div h4 {
+    text-align: center;
+}
+
+/* --- CONTACTO --- */
+.contacto form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input.cta-button {
+    width: auto; /* Para que el botón no ocupe el 100% */
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #bdd7a4;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+}
+.redes-sociales img {
+    height: 24px;
+}
