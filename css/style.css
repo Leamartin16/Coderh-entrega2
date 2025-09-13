@@ -362,3 +362,20 @@ footer div a img {
 
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid-main {
+        min-height: calc(100vh - 200px);
+        /* Ajustá según el alto del header y footer */
+    }
+
+    .services-summary-grid {
+        gap: 2rem;
+        /* Si el espacio entre tarjetas es demasiado grande */
+    }
+
+    footer {
+        margin-top: 0;
+        /* Asegurarte que no tenga margen extra */
+    }
+}
