@@ -90,9 +90,10 @@ header ul li a:hover {
 .hero h1 {
     text-align: center;
     margin: 20px 0;
+    margin-bottom: 0;
     font-size: 2em;
     color: #333;
-    padding-top: 15px;
+    padding-top: 40px;
 }
 
 .tarjetaservicio-grid {
@@ -142,6 +143,7 @@ header ul li a:hover {
 
 .nosotros div h2 {
     text-align: center;
+    font-size: 2em;
     margin-bottom: 15px;
 }
 
@@ -159,6 +161,7 @@ header ul li a:hover {
 }
 
 .tituloservicios h2 {
+    font-size: 2em;
     padding: 15px;
 }
 
@@ -198,6 +201,7 @@ header ul li a:hover {
 }
 
 .tituloclientes h2 {
+    font-size: 2em;
     padding: 10px;
 }
 
@@ -226,6 +230,7 @@ header ul li a:hover {
 /** --- CONTACTO --- */
 
 .contacto h2 {
+    font-size: 2em;
     padding: 10px;
 }
 
