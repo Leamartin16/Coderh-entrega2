@@ -1,0 +1,50 @@
+
+
+/* --- FUENTES Y ESTILOS GENERALES --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    line-height: 1.6;
+    color: #2d3748;
+    background: #ffffff;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 150px;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #001a41;
+}
+
+p {
+    color: #555;
+}

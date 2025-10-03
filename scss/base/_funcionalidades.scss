@@ -1,0 +1,53 @@
+$color-fondo: rgb(124, 170, 126);
+$gris-suave: #f8fafc;
+$gris-medio: #e2e8f0;
+$gris-texto: #4a5568;
+$gris-raro: #555;
+$negro-texto: #333;
+$blanco: #ffffff;
+$negro: #000000;
+$texto-oscuro: #2d3748;
+
+
+
+
+//extend
+%boton {
+    display: inline-block;
+    background: $negro;
+    color: $blanco;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1em;
+    width: 100%;
+    max-width: 280px;
+    &:hover {
+        color: $negro;
+        background: lighten($color-fondo, 1%);
+    }
+}
+
+
+
+//mixin
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition-all {
+    transition: all 0.3s ease;
+}
+
+@mixin shadow-hover {
+    box-shadow: 0 15px 35px rgba(45, 116, 218, 0.15);
+}
+
+@mixin card-style {
+    background: $blanco;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    @include transition-all;
+}

@@ -96,7 +96,7 @@ header ul li a:hover {
     padding-top: 40px;
 }
 
-.tarjetaservicio-grid {
+.tarjetaservicio {
     display: flex;
     flex-direction: column;
 }
@@ -135,10 +135,6 @@ header ul li a:hover {
     height: auto;
     border-radius: 10px;
     object-fit: cover;
-}
-
-.nosotros div {
-    text-align: center;
 }
 
 .nosotros div h2 {
@@ -202,7 +198,7 @@ header ul li a:hover {
 
 .tituloclientes h2 {
     font-size: 2em;
-    padding: 10px;
+    padding: 5px;
 }
 
 .clientes {
@@ -213,7 +209,7 @@ header ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    margin: 10px auto;
+    margin: 5px auto;
     max-width: 1000px;
 }
 
@@ -301,15 +297,15 @@ footer div a img {
 /*? --- Estilos Media Queri --- */
 @media (min-width: 768px) {
 
-    .tarjetaservicio-grid {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     header {
         flex-direction: row;
         justify-content: space-between;
         padding: 15px 40px;
+    }
+
+    .tarjetaservicio {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
 
@@ -329,14 +325,6 @@ footer div a img {
         gap: 50px;
     }
 
-    .nosotros div {
-        text-align: left;
-    }
-
-    .nosotros div h2 {
-        text-align: left;
-    }
-
     .nosotros img {
         max-width: 100%;
         height: 700px;
@@ -349,7 +337,7 @@ footer div a img {
         grid-template-columns: 1fr 1fr;
     }
 
-    .clientes article {
+    .clientes {
         display: flex;
         flex-direction: row;
         max-width: fit-content;
@@ -359,7 +347,7 @@ footer div a img {
         height: 150px;
     }
 
-    .mapa {
+    .mapa-responsive {
         margin-top: 30px;
         text-align: center;
     }
@@ -376,11 +364,11 @@ footer div a img {
 @media (min-height: 1366px) {
 
     body {
-    padding-top: 90px;
+        padding-top: 90px;
     }
 
 
-    
+
     main {
         min-height: calc(100vh - 200px);
         display: flex;

@@ -1,0 +1,234 @@
+/*? --- Estilos Media Queri --- */
+
+
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+
+/////// hero
+
+    .confianza div {
+        flex-direction: row;
+    }
+
+    .confianza .item-confianza {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .servicios {
+
+        .contenedor-servicios {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .boton-contenedor {
+            grid-column: 1 / -1;
+            /* Hace que el botón ocupe todas las columnas */
+        }
+
+    }
+
+
+    .diferenciadores {
+
+
+        .contenedor-diferenciadores {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+    }
+
+
+// nosotros
+
+    .nosotros {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 40px;
+        margin: 60px auto;
+        max-width: 90%;
+
+        article {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            div img {
+                border-radius: 10px;
+                height: 250px;
+                width: 100%;
+            }
+        }
+    }
+
+// servicios
+
+    .headservicios {
+        grid-template-columns: repeat(2, 1fr);
+
+
+        .tarjetaservicio {
+
+            div img {
+                border-radius: 10px;
+                height: 300px;
+                width: 100%;
+            }
+
+        }
+    }
+
+
+// clientes
+
+    .clientes {
+
+        .contenedor-clientes {
+
+
+
+            .flex-clientes {
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 30px;
+                gap: 40px;
+                margin: 60px auto;
+                max-width: 90%;
+
+                .tarjeta-cliente {
+
+
+                    div {
+                        height: 200px;
+                    }
+
+                }
+            }
+        }
+    }
+
+// contacto
+
+    .mapa-responsive {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    
+// footer
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+
+}
+
+
+
+
+
+@media (min-height: 1024px) {
+
+    body {
+        padding-top: 90px;
+    }
+
+
+    header {
+        margin-bottom: 50px;
+    }
+
+
+
+// nosotros
+
+    .nosotros {
+        padding: 80px 0;
+
+
+        article {
+            padding: 60px 50px;
+            max-width: 850px;
+
+            
+            div img {
+                height: 500px;
+            }
+        }
+    }
+
+// servicios
+
+    .headservicios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+
+        .tarjetaservicio {
+            grid-column: 1 / -1;
+
+            div img {
+                border-radius: 10px;
+                height: 300px;
+                width: 100%;
+            }
+
+
+        }
+    }
+
+
+// clientes
+
+    .clientes {
+
+        .contenedor-clientes {
+        width: 100%;
+        max-width: 1200px;
+
+
+            .flex-clientes {
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+
+                .tarjeta-cliente {
+                    padding: 10px 10px;
+
+                    div {
+                        height: 300px;
+                        margin-bottom: 10px;
+                    }
+                    
+
+                }
+            }
+        }
+    }
+
+// footer
+
+    footer {
+        display: flex;
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+
+}

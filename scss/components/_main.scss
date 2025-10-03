@@ -1,0 +1,577 @@
+/*?--- SECCIÓN HERO ---*/
+
+
+.hero-banner {
+    text-align: center;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: $gris-suave;
+    margin-top: 0;
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 1em;
+        opacity: 0.9;
+        max-width: 100%;
+        margin: 0 auto 25px;
+        line-height: 1.5;
+    }
+}
+
+
+
+//confianza
+
+.confianza {
+    padding: 40px 20px;
+    background: $color-fondo;
+    color: $negro;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .item-confianza {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .numero {
+        font-size: 2em;
+        font-weight: 700;
+        color: $negro;
+        margin-bottom: 5px;
+    }
+
+    .texto {
+        font-size: 0.9em;
+        color: $gris-texto;
+    }
+}
+
+//servicios
+
+.servicios {
+    padding: 40px 20px;
+    background: $gris-suave;
+
+
+    div h2 {
+        text-align: center;
+        color: $negro-texto;
+        font-size: 1.8em;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+
+    .contenedor-servicios {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+    .tarjetaservicio-card {
+        background-color: $blanco;
+        border-radius: 12px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        @include transition-all;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-color: $negro-texto;
+        }
+
+
+        img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+
+
+        h3 {
+            color: $negro-texto;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+
+        p {
+            color: $gris-texto;
+            line-height: 1.5;
+            font-size: 0.95em;
+            margin: 0;
+        }
+    }
+        .boton-contenedor {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        }
+}
+
+// Botones
+
+
+    .btn-primary {
+        @include flex-center;
+        padding: 14px 30px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        max-width: 280px;
+        @include transition-all;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+
+
+    .btn-primary {
+        display: inline-block;
+        padding: 10px 5px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 1em;
+        @include transition-all;
+        width: 100%;
+        max-width: 120px;
+        @include transition-all;
+        @extend %boton
+    }
+
+// Diferenciadores
+
+
+.diferenciadores {
+    padding: 40px 20px;
+    background: $gris-suave;
+
+    h2 {
+        text-align: center;
+        color: $negro;
+        font-size: 1.8em;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+
+
+    .diferenciadores-card {
+        @include card-style;
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+        border-top: 4px solid $color-fondo;
+        flex-direction: column;
+        min-height: 250px;
+
+        &:hover {
+            transform: translateY(-5px);
+            @include shadow-hover;
+        }
+
+        .icono {
+            font-size: 3em;
+            margin-bottom: 20px;
+            height: 60px;
+            @include flex-center;
+            width: 100%;
+        }
+
+        h3 {
+            color: $negro-texto;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+            min-height: 50px;
+            @include flex-center;
+            width: 100%;
+        }
+
+        p {
+            color: $gris-texto;
+            line-height: 1.5;
+            font-size: 0.95em;
+            margin: 0;
+            flex-grow: 1;
+            @include flex-center;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+}
+
+// transformar
+
+.cta-final {
+    padding: 40px 20px;
+    text-align: center;
+    background: $gris-suave;
+
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: $negro-texto;
+    }
+
+    p {
+        font-size: 1em;
+        opacity: 0.9;
+        margin-bottom: 25px;
+        color: $negro;
+        line-height: 1.5;
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 5px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1em;
+    @include transition-all;
+    width: 100%;
+    max-width: 280px;
+    @extend %boton
+}
+
+
+/** --- NOSOTROS --- */
+
+.titulonosotros {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 950px;
+    padding-top: 20px;
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+.nosotros {
+    @include flex-center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    
+
+
+    article {
+        width: 100%;
+
+        div img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0px 0px;
+            object-fit: cover;
+        }
+
+        div h3 {
+            padding: 10px;
+            text-align: center;
+            color: $negro-texto;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            padding: 10px;
+            text-align: center;
+            line-height: 1.6;
+            color: $gris-raro;
+            margin: 0;
+        }
+    }
+
+}
+
+
+/** --- SERVICIOS --- */
+
+.tituloservicios {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 950px;
+    padding: 20px 15px 0;
+
+    h2 {
+        text-align: center;
+        color: $negro-texto;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    p {
+        text-align: center;
+        color: $gris-texto;
+        font-size: 1em;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.headservicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+    .tarjetaservicio {
+        border: 1px solid #c3c3c37d;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Sombra más suave en móvil
+        text-align: center;
+        padding: 12px;
+        @include transition-all;
+        
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        div {
+            overflow: hidden;
+            border-radius: 8px 8px 0px 0px;
+            
+            img {
+                width: 100%;
+                height: 180px; // Más pequeño en móvil
+                object-fit: cover;
+                display: block;
+                padding: 5px;
+
+            }
+        }
+
+        h3 {
+            padding: 8px 10px;
+            color: $negro-texto;
+            font-size: 1.1rem; // Más pequeño en móvil
+        }
+
+        p {
+            padding: 8px 10px;
+            line-height: 1.5;
+            color: $gris-raro;
+            font-size: 0.85rem; // Más pequeño en móvil
+        }
+    }
+}
+.finalservicios h4 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+/** --- CLIENTES --- */
+
+.clientes {
+    padding: 40px 15px;
+
+    .contenedor-clientes {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+            color: $negro-texto;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+
+        p {
+            text-align: center;
+            color: $gris-texto;
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flex-clientes {
+            @include flex-center;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+
+            .tarjeta-cliente {
+                background: $blanco;
+                border-radius: 12px;
+                padding: 25px 20px;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+                width: 100%;
+                @include transition-all;
+                box-sizing: border-box;
+
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+                }
+
+
+
+                div {
+                    width: 100%;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                }
+
+                div img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                    display: block;
+                }
+
+                div p {
+                    color: $gris-texto;
+                    line-height: 1.5;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 0.95em;
+                }
+
+                div ul {
+                    list-style: none;
+                    padding: 0;
+                    margin-top: 20px;
+                }
+
+                div ul li {
+                    padding: 6px 0;
+                    color: $gris-texto;
+                    font-size: 0.9em;
+                    display: flex;
+                    align-items: center;
+                    &::before {
+                        color: #10b981;
+                        font-weight: bold;
+                        margin-right: 8px;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/** --- CONTACTO --- */
+
+
+
+.contacto {
+    text-align: center;
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .mapa-responsive {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .formulario {
+        form {
+            max-width: 600px;
+            margin: 30px auto 0;
+            text-align: left;
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+
+                &:focus {
+                    outline: none;
+                    border-color: $color-fondo;
+                    @include transition-all;
+                    box-shadow: 0 0 8px rgba(183, 207, 154, 0.6);
+                }
+
+                &.cta-button {
+                display: inline-block;
+                padding: 10px 5px;
+                text-decoration: none;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 1em;
+                @include transition-all;
+                width: 100%;
+                max-width: 120px;
+                @include transition-all;
+                @extend %boton
+                }
+            }
+        }
+    }
+}

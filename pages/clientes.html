@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Clientes - Innovant</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
@@ -48,23 +53,41 @@
     </header>
 
     <main>
-        <section>
-            <div class="tituloclientes">
+        <section class="clientes">
+            <div class="contenedor-clientes">
                 <h2>Nuestros Clientes</h2>
-                <p>Estamos orgullosos de colaborar con empresas líderes que confían en nosotros para impulsar su
-                    crecimiento.</p>
-            </div>
-                <div class="clientes">
-                <img src="../img/logo-ps-rosa.png" class="card-img-bottom" alt="logo-ps-rosa">
-                <div class="card-body">
-                    <p class="card-text">Prevención Salud es la empresa de medicina prepaga del Grupo Sancor Seguros,
-                        uno de los grupos aseguradores más importantes de Argentina. Con una fuerte presencia en todo el
-                        país, se dedican a cuidar el bienestar de sus miles de afiliados a través de una amplia red de
-                        prestadores y una completa oferta de planes de salud. Su enfoque en la calidad de servicio y la
-                        innovación los posiciona como un referente clave en el sector.</p>
-                </div>
-                <div class="card-body">
-                    <a href="https://www.prevencionsalud.com.ar/" class="link">Prevención Salud</a>
+                <p>Estamos orgullosos de colaborar con empresas líderes que confían en nosotros
+                    para impulsar su crecimiento.</p>
+                <div class="flex-clientes">
+                    <article class="tarjeta-cliente">
+                        <div>
+                            <img src="../img/logo-ps.svg" class="card-img-bottom" alt="logo-ps-rosa">
+                        </div>
+                        <div>
+                            <p>Prevención Salud es la empresa de medicina prepaga del Grupo Sancer Seguros, uno de los
+                                grupos aseguradores más importantes de Argentina.</p>
+                            <ul>
+                                <li>✅ Amplia presencia nacional</li>
+                                <li>✅ Miles de afiliados</li>
+                                <li>✅ Enfoque en calidad e innovación</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-cliente">
+                        <div>
+                            <img src="../img/logo-Federal.png" class="card-img-bottom" alt="logo-fd">
+                        </div>
+                        <div>
+                            <p>Con más de 6 décadas de experiencia, Federada Salud brinda cobertura médica de primer
+                                nivel a más de 140.000 asociados.</p>
+                            <ul>
+                                <li>✅ 60+ años de experiencia</li>
+                                <li>✅ 140,000+ asociados</li>
+                                <li>✅ Cobertura nacional</li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -73,9 +96,9 @@
     <footer>
         <p>&copy; 2025 Innovant.</p>
         <div class="redes-sociales">
-            <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="../img/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="../img/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="../img/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="../img/linkedin.svg" alt="LinkedIn"></a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
