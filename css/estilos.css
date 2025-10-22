@@ -236,8 +236,7 @@ header nav div div div li a:hover {
   font-size: 1em;
   transition: all 0.3s ease;
   width: 100%;
-  max-width: 120px;
-  transition: all 0.3s ease;
+  max-width: 280px;
 }
 
 .diferenciadores {
@@ -330,7 +329,7 @@ header nav div div div li a:hover {
   max-width: 280px;
 }
 
-/** --- NOSOTROS --- */
+/** --- SECCIÓN NOSOTROS --- */
 .titulonosotros {
   text-align: center;
   margin: 10px auto;
@@ -346,12 +345,12 @@ header nav div div div li a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
   padding: 0px 0px 20px;
   margin: 40px auto;
-  max-width: 100%;
+  max-width: 1200px;
   overflow: hidden;
 }
 .nosotros article {
@@ -378,7 +377,7 @@ header nav div div div li a:hover {
   margin: 0;
 }
 
-/** --- SERVICIOS --- */
+/** --- SECCIÓN SERVICIOS --- */
 .tituloservicios {
   text-align: center;
   margin: 10px auto;
@@ -451,7 +450,7 @@ header nav div div div li a:hover {
   padding-bottom: 25px;
 }
 
-/** --- CLIENTES --- */
+/** --- SECCIÓN CLIENTES --- */
 .clientes {
   padding: 40px 15px;
 }
@@ -537,7 +536,7 @@ header nav div div div li a:hover {
   font-size: 1.1em;
 }
 
-/** --- CONTACTO --- */
+/** --- SECCIÓN CONTACTO --- */
 .contacto {
   text-align: center;
 }
